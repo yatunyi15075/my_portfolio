@@ -6,6 +6,10 @@ const FooterContainer = styled.footer`
   color: white;
   padding: 2rem 0;
   text-align: center;
+  position: fixed; /* Fix the footer to the bottom */
+  width: 100%; /* Make the footer full width */
+  bottom: 0; /* Align the footer to the bottom */
+  z-index: 999; /* Ensure footer is above other content */
 `;
 
 const FooterText = styled.p`
