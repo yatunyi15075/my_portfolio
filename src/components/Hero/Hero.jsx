@@ -23,6 +23,7 @@ const HeroTitle = styled.h1`
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  
 `;
 
 const SubTitle = styled.h2`

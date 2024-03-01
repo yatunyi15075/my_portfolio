@@ -62,7 +62,7 @@ const Projects = () => {
       <ProjectGrid>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="Text to Image Generator" />
+            <ProjectImage src={images.text_image} alt="Text to Image Generator" />
             <ProjectTitle>Text to Image Generator</ProjectTitle>
             <ProjectDescription>
               A project that converts text input into an image output.
@@ -71,7 +71,7 @@ const Projects = () => {
         </ProjectCardLink>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="School Management System" />
+            <ProjectImage src={images.sms} alt="School Management System" />
             <ProjectTitle>School Management System</ProjectTitle>
             <ProjectDescription>
               A comprehensive system for managing school operations.
@@ -80,7 +80,7 @@ const Projects = () => {
         </ProjectCardLink>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="CodeHeal Flutter Mobile App" />
+            <ProjectImage src={images.appointment} alt="CodeHeal Flutter Mobile App" />
             <ProjectTitle>CodeHeal Flutter Mobile App</ProjectTitle>
             <ProjectDescription>
               Mobile application connecting doctors with patients, built with Flutter.
@@ -89,7 +89,7 @@ const Projects = () => {
         </ProjectCardLink>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="Hospital Management System" />
+            <ProjectImage src={images.hms} alt="Hospital Management System" />
             <ProjectTitle>Hospital Management System</ProjectTitle>
             <ProjectDescription>
               An advanced system for managing hospital operations and patient records.

@@ -18,6 +18,10 @@ import tailwind from "../assets/tailwind.svg";
 import typescript from "../assets/typescript.svg";
 import vitejs from "../assets/vitejs.svg";
 import github from "../assets/github.svg";
+import hms from "../assets/hms.png";
+import appointment from "../assets/appointment.png";
+import sms from "../assets/sms.png";
+import text_image from "../assets/text_image.png";
 
 export default {
     logo,
@@ -39,5 +43,9 @@ export default {
     tailwind,
     typescript,
     vitejs,
-    github
+    github,
+    hms,
+    appointment,
+    sms,
+    text_image
 }
