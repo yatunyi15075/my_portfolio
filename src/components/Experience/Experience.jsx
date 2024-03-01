@@ -11,8 +11,9 @@ const WorkExperienceContainer = styled.div`
     text-align: left; /* Align text to the left */
 `;
 
-const WorkExperienceTitle = styled.h2`
+const WorkExperienceTitle = styled.h1`
     margin-bottom: 2rem;
+    font-size: 2rem;
 `;
 
 const ExperienceList = styled.ul`

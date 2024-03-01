@@ -26,9 +26,10 @@ const HeroTitle = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 3rem; /* Increased font-size for cartoonish effect */
   font-weight: bold;
   margin-bottom: 1.5rem;
+  font-family: 'Comic Sans MS', cursive; /* Added cartoonish font */
 `;
 
 const HeroText = styled.p`
@@ -52,7 +53,8 @@ const Button = styled.button`
 `;
 
 const HelloEmoji = styled.span`
-  font-size: 2rem;
+  font-size: 3rem; /* Increased font-size for cartoonish effect */
+  font-family: 'Comic Sans MS', cursive; /* Added cartoonish font */
 `;
 
 const HeroImageContainer = styled.div`
@@ -76,7 +78,7 @@ const Hero = () => {
       <GlobalStyles />
       <HeroContent>
         <HeroTitle>
-          <HelloEmoji>👋</HelloEmoji> Hello, there I'm
+          <HelloEmoji>👋</HelloEmoji> Hello, I'm
         </HeroTitle>
         <SubTitle>Yatunyi Brian</SubTitle>
         <HeroText>
