@@ -4,7 +4,6 @@ import { images } from '../../constants';
 import GlobalStyles from '../../constants/globalstyle';
 
 const ProjectsContainer = styled.div`
-
   padding: 2rem;
   text-align: center;
 `;
@@ -61,33 +60,40 @@ const Projects = () => {
       <GlobalStyles />
       <h2>Projects</h2>
       <ProjectGrid>
-      
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="Project 1" /*width="300px" height="200px"*/ />
-            <ProjectTitle>Project 1</ProjectTitle>
-            <ProjectDescription>Description of Project 1</ProjectDescription>
+            <ProjectImage src={images.hero} alt="Text to Image Generator" />
+            <ProjectTitle>Text to Image Generator</ProjectTitle>
+            <ProjectDescription>
+              A project that converts text input into an image output.
+            </ProjectDescription>
           </ProjectCard>
         </ProjectCardLink>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="Project 2" /*width="300px" height="200px"*/ />
-            <ProjectTitle>Project 2</ProjectTitle>
-            <ProjectDescription>Description of Project 2</ProjectDescription>
+            <ProjectImage src={images.hero} alt="School Management System" />
+            <ProjectTitle>School Management System</ProjectTitle>
+            <ProjectDescription>
+              A comprehensive system for managing school operations.
+            </ProjectDescription>
           </ProjectCard>
         </ProjectCardLink>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="Project 3" /*width="300px" height="200px"*/ />
-            <ProjectTitle>Project 3</ProjectTitle>
-            <ProjectDescription>Description of Project 3</ProjectDescription>
+            <ProjectImage src={images.hero} alt="CodeHeal Flutter Mobile App" />
+            <ProjectTitle>CodeHeal Flutter Mobile App</ProjectTitle>
+            <ProjectDescription>
+              Mobile application connecting doctors with patients, built with Flutter.
+            </ProjectDescription>
           </ProjectCard>
         </ProjectCardLink>
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
-            <ProjectImage src={images.hero} alt="Project 4" /*width="300px" height="200px"*/ />
-            <ProjectTitle>Project 4</ProjectTitle>
-            <ProjectDescription>Description of Project 4</ProjectDescription>
+            <ProjectImage src={images.hero} alt="Hospital Management System" />
+            <ProjectTitle>Hospital Management System</ProjectTitle>
+            <ProjectDescription>
+              An advanced system for managing hospital operations and patient records.
+            </ProjectDescription>
           </ProjectCard>
         </ProjectCardLink>
       </ProjectGrid>
