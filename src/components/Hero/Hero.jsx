@@ -4,16 +4,17 @@ import { images } from '../../constants';
 import GlobalStyles from '../../constants/globalstyle';
 
 const HeroContainer = styled.div`
-  position: relative; 
-  padding: 2rem;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  padding-bottom: 700px ;
+  padding-top: 300px;
 `;
 
 const HeroContent = styled.div`
   z-index: 1;
-
   color: #fff;
   text-align: center;
 `;
@@ -53,20 +54,16 @@ const HeroImage = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%; 
-  object-fit: cover;
+  width: 100%; /* Adjusted width to cover the entire hero section */
+  height: 100%; /* Adjusted height to cover the entire hero section */
+  object-fit: cover; /* Ensure the image covers the container */
   filter: brightness(70%);
-  max-width: 100%;
-  height: auto;
-  {'' /* width: 1050px; */}
-  padding-bottom: auto;
 `;
 
 const Hero = () => {
   return (
     <HeroContainer>
-    <GlobalStyles />
+      <GlobalStyles />
       <HeroContent>
         <HeroTitle>Hello, there I'm</HeroTitle>
         <SubTitle>Yatunyi Brian</SubTitle>
@@ -76,7 +73,7 @@ const Hero = () => {
         </HeroText>
         <Button>Find Out More</Button>
       </HeroContent>
-      <HeroImage src={images.hero} alt="Hero Image"  />
+      <HeroImage src={images.hero} alt="Hero Image" />
     </HeroContainer>
   );
 }
