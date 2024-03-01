@@ -22,6 +22,8 @@ import hms from "../assets/hms.png";
 import appointment from "../assets/appointment.png";
 import sms from "../assets/sms.png";
 import text_image from "../assets/text_image.png";
+import chat from "../assets/chat.png";
+import lms from "../assets/lms.jpg"
 
 export default {
     logo,
@@ -47,5 +49,7 @@ export default {
     hms,
     appointment,
     sms,
-    text_image
+    text_image,
+    lms,
+    chat
 }
