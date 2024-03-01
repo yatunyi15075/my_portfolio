@@ -1,15 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
+import Experience from '.././Experience/Experience.jsx'
+import GlobalStyles from '../../constants/globalstyle.js';
+
+
+
+const ExperienceContainer = styled.div`
+  background-color: #f9f9f9;
+  padding: 2rem
+`;
+
+const ExperienceTitle = styled.h2`
+  margin-bottom: 2rem;
+`;
+
+const ExperienceList = styled.ul`
+  list-style: none;
+  padding: 0;
+`;
+
+const ExperienceItem = styled.li`
+  margin-bottom: 1rem;
+`;
+
+const ExperienceIcon = styled.span`
+  margin-right: 0.5rem;
+`;
 
 const AchievementContainer = styled.div`
-  background-color: #f9f9f9;
+  
   padding: 2rem;
   text-align: center;
 `;
 
 const AchievementTitle = styled.h2`
   margin-bottom: 2rem;
-  color: #333;
+  color: #ffffff;
   font-size: 2rem;
 `;
 
@@ -44,6 +70,17 @@ const AchievementIcon = styled.span`
   font-size: 1.5rem;
 `;
 
+const HomeContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex--wrap: wrap;
+  gap: 2rem;
+`;
+
+const HomeColumn = styled.div`
+  flex: 1 1 50%;
+`;
+
 const AchievementText = styled.span`
   color: #555;
 `;
@@ -51,7 +88,11 @@ const AchievementText = styled.span`
 const Achievements = () => {
   const linkedInURL = 'https://www.linkedin.com/';
   return (
+    <HomeContainer>
+    <GlobalStyles />
+    <HomeColumn>
     <AchievementContainer>
+    <GlobalStyles />
       <AchievementTitle>My Achievements</AchievementTitle>
       <AchievementList>
         <AchievementColumn>
@@ -96,7 +137,18 @@ const Achievements = () => {
         </AchievementColumn>
       </AchievementList>
     </AchievementContainer>
+    </HomeColumn>
+
+    <HomeColumn>
+  
+         <Experience />
+      
+    </HomeColumn>
+
+    </HomeContainer>
   );
 };
 
 export default Achievements;
+
+

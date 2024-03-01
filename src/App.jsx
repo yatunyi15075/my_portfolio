@@ -7,13 +7,34 @@ import About from './components/About/About';
 import Achievements from './components/Achievements/Achievements';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects.jsx';
-import styled from 'styled-components';
+// import Experience from './components/Experience/Experience.jsx';
+import styled, { createGlobalStyle } from 'styled-components';
+
+//Global styles
+const GlobalStyles = createGlobalStyle`
+  body {
+    background-color: #121212; /* background color*/
+    color: #ffffff; /* color of texts */
+    font-family: 'Ariel', sans-serif;
+  }
+
+  /*Darker cerd styles*/
+  .cars{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 100vh;
+  }
+`;
+
 
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 8rem; /* Add padding to all sides */
+  padding: 8rem; 
 `;
 
 const ContentContainer = styled.div`
@@ -24,6 +45,7 @@ const App = () => {
   return (
     <Router>
       <AppContainer>
+      <GlobalStyles />
         <Navbar />
         <ContentContainer>
           <Routes>
@@ -46,6 +68,7 @@ const HomePage = () => {
       <Projects />
       <Technologies />
       <About />
+      {/* <Experience /> */}
       <Achievements />
     </>
   );

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { images } from '../../constants';
+import GlobalStyles from '../../constants/globalstyle';
 
 const TechnologiesContainer = styled.div`
-  background-color: #f9f9f9; /* Change background color as needed */
+  
   padding: 2rem;
   text-align: center;
 `;
@@ -32,6 +33,7 @@ const TechnologyName = styled.p`
 const Technologies = () => {
   return (
     <TechnologiesContainer>
+    <GlobalStyles />
       <h2>Technologies</h2>
       <TechnologiesList>
         <TechnologyItem>

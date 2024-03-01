@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { images } from '../../constants';
+import GlobalStyles from '../../constants/globalstyle';
 
 const ProjectsContainer = styled.div`
-  background-color: #f9f9f9;
+
   padding: 2rem;
   text-align: center;
 `;
@@ -57,8 +58,10 @@ const Projects = () => {
 
   return (
     <ProjectsContainer>
+      <GlobalStyles />
       <h2>Projects</h2>
       <ProjectGrid>
+      
         <ProjectCardLink onClick={redirectToGitHub}>
           <ProjectCard>
             <ProjectImage src={images.hero} alt="Project 1" /*width="300px" height="200px"*/ />

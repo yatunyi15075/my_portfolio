@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import GlobalStyles from '../../constants/globalstyle';
 
 const FooterContainer = styled.footer`
-  background-color: #333; /* Change background color as needed */
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -25,6 +25,7 @@ const FooterLink = styled.a`
 const Footer = () => {
   return (
     <FooterContainer>
+    <GlobalStyles />
       <FooterText>
         &copy; {new Date().getFullYear()} Yatunyi Brian Ondeko.
       </FooterText>
