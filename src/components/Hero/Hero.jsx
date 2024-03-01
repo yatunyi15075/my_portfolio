@@ -6,34 +6,34 @@ import GlobalStyles from '../../constants/globalstyle';
 const HeroContainer = styled.div`
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ensure the image doesn't overflow */
-  padding-bottom: 700px ;
-  padding-top: 300px;
+  overflow: hidden;
+  padding: 2rem;
 `;
 
 const HeroContent = styled.div`
   z-index: 1;
   color: #fff;
-  text-align: center;
+  text-align: left;
+  max-width: 50%;
+  padding-bottom: 2rem; /* Added padding to the bottom */
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  
 `;
 
 const SubTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 `;
 
 const HeroText = styled.p`
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 `;
 
 const Button = styled.button`
@@ -51,14 +51,23 @@ const Button = styled.button`
   }
 `;
 
-const HeroImage = styled.img`
+const HelloEmoji = styled.span`
+  font-size: 2rem;
+`;
+
+const HeroImageContainer = styled.div`
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%; /* Adjusted width to cover the entire hero section */
-  height: 100%; /* Adjusted height to cover the entire hero section */
-  object-fit: cover; /* Ensure the image covers the container */
-  filter: brightness(70%);
+  right: 0;
+  height: 100%;
+`;
+
+const HeroImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #ffffff; /* Added border */
+  border-radius: 20px; /* Added border-radius for curved corners */
 `;
 
 const Hero = () => {
@@ -66,15 +75,18 @@ const Hero = () => {
     <HeroContainer>
       <GlobalStyles />
       <HeroContent>
-        <HeroTitle>Hello, there I'm</HeroTitle>
+        <HeroTitle>
+          <HelloEmoji>👋</HelloEmoji> Hello, there I'm
+        </HeroTitle>
         <SubTitle>Yatunyi Brian</SubTitle>
         <HeroText>
-          This is my developer portfolio. Thank you for opening it. I appreciate your time 
-           and consideration. I value you.
+          This is my developer portfolio. Thank you for opening it. I appreciate your time and consideration. I value you.
         </HeroText>
         <Button>Find Out More</Button>
       </HeroContent>
-      <HeroImage src={images.hero} alt="Hero Image" />
+      <HeroImageContainer>
+        <HeroImage src={images.hero} alt="Hero Image" />
+      </HeroImageContainer>
     </HeroContainer>
   );
 }

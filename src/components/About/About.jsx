@@ -13,17 +13,24 @@ const AboutText = styled.div`
   flex: 1;
   margin-left: 1rem;
 `;
+
 const AboutTitle = styled.h2`
   margin-bottom: 2rem;
   color: #333;
   font-size: 2rem;
 `;
 
+const AboutImageContainer = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const AboutImage = styled.img`
-  flex: 1;
-  max-width: 50%;
-  border-radius: 50%; /* Makes the image circular */
+  max-width: 100%;
+  border-radius: 20px; /* Adds a rounded border */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 `;
 
 const Button = styled.button`
@@ -41,18 +48,14 @@ const Button = styled.button`
   }
 `;
 
-
-
-
 const About = () => {
   return (
     <AboutContainer>
-    {/* <AboutTitle>About Me</AboutTitle> */}
       <AboutText>
         <h3>Hi, I'm Brian</h3>
-        <h2>About Me</h2>
+        <AboutTitle>About Me</AboutTitle>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum   massa
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum massa
           in eros porttitor, sit amet ultricies neque consectetur. Vivamus non tellus eget ex maximus lobortis.
         </p>
        
@@ -61,7 +64,9 @@ const About = () => {
         </p>
         <Button>Download CV</Button>
       </AboutText>
-      <img src={images.about} alt="about img" />
+      <AboutImageContainer>
+        <AboutImage src={images.about} alt="about img" />
+      </AboutImageContainer>
     </AboutContainer>
   );
 };
