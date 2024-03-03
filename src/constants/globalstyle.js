@@ -1,11 +1,10 @@
 
 import styled, { createGlobalStyle } from 'styled-components'
 
-//Global styles
 const GlobalStyles = createGlobalStyle`
   body {
-    background-color: #121212; /* background color*/
-    color: #ffffff; /* color of texts */
+    background-color: #121212; 
+    color: #ffffff; 
     font-family: 'Ariel', sans-serif;
   }
 

@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
     width: 90%;
     margin: 0 auto;
   }
-/* Smooth Scroll  */
+
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;

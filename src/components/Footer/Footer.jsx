@@ -6,9 +6,9 @@ const FooterContainer = styled.footer`
   color: white;
   padding: 2rem 0;
   text-align: center;
-  width: 100%; /* Make the footer full width */
-  bottom: 0; /* Align the footer to the bottom */
-  z-index: 999; /* Ensure footer is above other content */
+  width: 100%; 
+  bottom: 0; 
+  z-index: 999; 
 `;
 
 const FooterText = styled.p`

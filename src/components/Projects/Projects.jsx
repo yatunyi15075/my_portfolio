@@ -55,7 +55,7 @@ const ProjectImage = styled.img`
 
 const Projects = () => {
   const redirectToGitHub = () => {
-    window.location.href = 'https://github.com'; // Redirect to GitHub
+    window.location.href = 'https://github.com'; 
   };
 
   return (

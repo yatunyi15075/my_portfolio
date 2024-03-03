@@ -4,11 +4,11 @@ import { FaBuilding } from 'react-icons/fa';
 import GlobalStyles from "../../constants/globalstyle";
 
 const WorkExperienceContainer = styled.div`
-    background-color: #121212; /* Background color */
-    color: #ffffff; /* Text color */
+    background-color: #121212;
+    color: #ffffff; 
     font-family: 'Arial', sans-serif;
     padding: 2rem;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 `;
 
 const WorkExperienceTitle = styled.h1`
@@ -23,8 +23,8 @@ const ExperienceList = styled.ul`
 
 const ExperienceItem = styled.li`
     margin-bottom: 2rem;
-    border-left: 4px solid #ffffff; /* Add border to the left side */
-    padding-left: 1rem; /* Add padding to the left of the item */
+    border-left: 4px solid #ffffff; 
+    padding-left: 1rem; 
 `;
 
 const CompanyName = styled.h3`

@@ -16,7 +16,7 @@ const HeroContent = styled.div`
   color: #fff;
   text-align: left;
   max-width: 50%;
-  padding-bottom: 2rem; /* Added padding to the bottom */
+  padding-bottom: 2rem; 
 `;
 
 const HeroTitle = styled.h1`
@@ -26,10 +26,10 @@ const HeroTitle = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-  font-size: 3rem; /* Increased font-size for cartoonish effect */
+  font-size: 3rem; 
   font-weight: bold;
   margin-bottom: 1.5rem;
-  font-family: 'Comic Sans MS', cursive; /* Added cartoonish font */
+  font-family: 'Comic Sans MS', cursive; 
 `;
 
 const HeroText = styled.p`
@@ -53,8 +53,8 @@ const Button = styled.button`
 `;
 
 const HelloEmoji = styled.span`
-  font-size: 3rem; /* Increased font-size for cartoonish effect */
-  font-family: 'Comic Sans MS', cursive; /* Added cartoonish font */
+  font-size: 3rem; 
+  font-family: 'Comic Sans MS', cursive; 
 `;
 
 const HeroImageContainer = styled.div`
@@ -68,8 +68,8 @@ const HeroImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 4px solid #ffffff; /* Added border */
-  border-radius: 20px; /* Added border-radius for curved corners */
+  border: 4px solid #ffffff; 
+  border-radius: 20px; 
 `;
 
 const Hero = () => {

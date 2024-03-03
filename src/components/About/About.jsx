@@ -29,8 +29,8 @@ const AboutImageContainer = styled.div`
 
 const AboutImage = styled.img`
   max-width: 100%;
-  border-radius: 20px; /* Adds a rounded border */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
 `;
 
 const Button = styled.button`

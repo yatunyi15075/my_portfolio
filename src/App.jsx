@@ -7,18 +7,17 @@ import About from './components/About/About';
 import Achievements from './components/Achievements/Achievements';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects.jsx';
-// import Experience from './components/Experience/Experience.jsx';
 import styled, { createGlobalStyle } from 'styled-components';
 
-//Global styles
+
 const GlobalStyles = createGlobalStyle`
   body {
-    background-color: #121212; /* background color*/
-    color: #ffffff; /* color of texts */
+    background-color: #121212; 
+    color: #ffffff; 
     font-family: 'Ariel', sans-serif;
   }
 
-  /*Darker cerd styles*/
+  
   .cars{
     background-color: #1e1e1e;
     color: #ffffff;
@@ -68,7 +67,6 @@ const HomePage = () => {
       <Projects />
       <Technologies />
       <About />
-      {/* <Experience /> */}
       <Achievements />
     </>
   );
